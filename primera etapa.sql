@@ -23,3 +23,18 @@ create table usuarios_grupos(
 	foreign key (grupo_id) references grupos(id)
 );
 
+insert into grupos values("", "Financeiro");
+insert into grupos values("", "Comercial");
+insert into grupos values("", "Suporte");
+insert into grupos values("", "Desenvolvimento");
+
+insert into usuarios values ("","Carlos", "carlos", "carlos123");
+insert into usuarios values ("","Junior", "junior", "junior123");
+insert into usuarios values ("","Andre", "andre", "andre123");
+
+insert into usuarios_grupos values (1,1);
+insert into usuarios_grupos values (1,2);
+insert into usuarios_grupos values (1,3);
+insert into usuarios_grupos values (1,4);
+insert into usuarios_grupos values (2,4);
+insert into usuarios_grupos values (3,1);
